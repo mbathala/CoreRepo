@@ -68,6 +68,7 @@ public class GivenNumberInWords {
 					} else if (len > 4) {
 						x = handleTwoDigits(num, x);
 						System.out.print(tens_power[len / 3] + " ");
+                                                System.out.print("");
 						if (len == 5) {
 							--len;
 						} else if (len == 8) {
