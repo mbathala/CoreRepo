@@ -3,7 +3,7 @@ package com.myex.core;
 public class GivenNumberInWords {
 
 	/*
-	 * The first string is not used, it is to make array indexing simple
+	 * The first string is not used, it is to make array indexing simple.....
 	 */
 	static String[] single_digits = new String[] { "zero", "one", "two", "three", "four", "five", "six", "seven",
 			"eight", "nine" };
