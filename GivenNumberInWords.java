@@ -22,7 +22,7 @@ public class GivenNumberInWords {
 
 	public static void convertToWords(String number) {
 
-		if (number != null && number.length() > 0) {
+		if (number.length() > 0) {
 			// Removing commas from number
 			if (number.contains(",")) {
 				String[] numbersWitComas = number.split(",");
