@@ -130,9 +130,9 @@ public class GivenNumberInWords {
 	}
 
 	public static void main(String[] args) {
-		convert_to_words("6119891");
-		convert_to_words("999,999,999");
-		convert_to_words("asdfasdf");
+		convertToWords("6119891");
+		convertToWords("999,999,999");
+		convertToWords("asdfasdf");
 	}
 
 }
