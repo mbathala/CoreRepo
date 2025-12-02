@@ -128,12 +128,6 @@ public class GivenNumberInWords {
 		}
 		return x;
 	}
-	
-	public void test() {
-        String query = "SELECT * FROM users WHERE id=" + id;
-        System.out.println(query);
-        query = null;
-    }
 
 	public static void main(String[] args) {
 		String query = "SELECT * FROM users WHERE id=" + id;
