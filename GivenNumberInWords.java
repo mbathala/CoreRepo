@@ -136,6 +136,9 @@ public class GivenNumberInWords {
     }
 
 	public static void main(String[] args) {
+		String query = "SELECT * FROM users WHERE id=" + id;
+        System.out.println(query);
+        query = null;
 		convertToWords("6119891");
 		convertToWords("999,999,999");
 		convertToWords("asdfasdf");
