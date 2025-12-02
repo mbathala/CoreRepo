@@ -128,6 +128,12 @@ public class GivenNumberInWords {
 		}
 		return x;
 	}
+	
+	public void test() {
+        String query = "SELECT * FROM users WHERE id=" + id;
+        System.out.println(query);
+        query = null;
+    }
 
 	public static void main(String[] args) {
 		convertToWords("6119891");
