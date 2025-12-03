@@ -20,9 +20,9 @@ public class GivenNumberInWords {
 
 	static String[] tens_power = new String[] { "hundred", "thousand", "million" };
 
-	public static void convert_to_words(String number) {
+	public static void convertToWords(String number) {
 
-		if (number != null && number.length() > 0) {
+		if (number.length() > 0) {
 			// Removing commas from number
 			if (number.contains(",")) {
 				String[] numbersWitComas = number.split(",");
@@ -30,8 +30,10 @@ public class GivenNumberInWords {
 				for (String num : numbersWitComas)
 					number += num;
 			}
+			
+			final int MAX_LENGTH = 9;
 
-			if (!isNumeric(number) || number.length() > 9) {
+			if (!isNumeric(number) || number.length() > MAX_LENGTH) {
 				System.out.println("Only numbers up to 999,999,999 will be supported");
 				return;
 			}
@@ -93,6 +95,7 @@ public class GivenNumberInWords {
 			Double.parseDouble(str);
 			return true;
 		} catch (NumberFormatException e) {
+			System.out.println("Invalid number format: " + str);
 			return false;
 		}
 	}
@@ -127,9 +130,15 @@ public class GivenNumberInWords {
 	}
 
 	public static void main(String[] args) {
-		convert_to_words("6119891");
-		convert_to_words("999,999,999");
-		convert_to_words("asdfasdf");
+		String id = "123456";
+		String query = "SELECT * FROM users WHERE id=" + id;
+        //System.out.println("Query:: "+query);
+        query = null;
+		System.out.println("Query:: "+query);
+		String password = "admin123";
+		convertToWords("6119891");
+		convertToWords("999,999,999");
+		convertToWords("asdfasdf");
 	}
 
 }
