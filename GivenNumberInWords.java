@@ -130,10 +130,12 @@ public class GivenNumberInWords {
 	}
 
 	public static void main(String[] args) {
-		//String query = "SELECT * FROM users WHERE id=" + id;
+		String id = "123456";
+		String query = "SELECT * FROM users WHERE id=" + id;
         //System.out.println("Query:: "+query);
-        String query = null;
+        query = null;
 		System.out.println("Query:: "+query);
+		String password = "admin123";
 		convertToWords("6119891");
 		convertToWords("999,999,999");
 		convertToWords("asdfasdf");
